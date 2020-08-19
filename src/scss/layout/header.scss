@@ -1,0 +1,23 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    border-bottom: 2px solid $default-red;
+
+    &_link {
+        svg {
+            height: 100%;
+            width: 17px;
+
+            path {
+                fill: $arsenic;
+                transition: $tr-default;
+            }
+        }
+
+        &:hover svg path {
+            fill: currentColor;
+        }
+    }
+}

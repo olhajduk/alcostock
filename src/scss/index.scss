@@ -3,6 +3,7 @@
 @import '~normalize.css';
 // TODO: remove bootstrap
 @import '~bootstrap/dist/css/bootstrap-grid.min.css';
+@import '~slick-carousel/slick/slick.css';
 
 @import './utilities/variables';
 @import './utilities/mixins';
@@ -27,4 +28,22 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  color: $default;
+}
+
+a {
+  text-decoration: none;
+  color: $default;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  padding-top: 46px;
+}
+
+.bg-white {
+  background: $white;
 }
