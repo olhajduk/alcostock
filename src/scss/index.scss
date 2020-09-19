@@ -27,9 +27,23 @@
 
 body {
   font-family: $ff-default;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.3px;
   color: $color-primary;
+}
+
+main {
+  padding: 58px 0 201px;
+  min-height: 100vh;
+}
+
+section {
+  padding: 40px 0;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -42,15 +56,6 @@ a {
   }
 }
 
-ul {
-  list-style: none;
-}
-
-main {
-  padding: 58px 0 202px;
-  min-height: 100vh;
-}
-
 svg {
   height: 100%;
   width: 100%;
@@ -58,6 +63,12 @@ svg {
   path {
       fill: currentColor;
   }
+}
+
+.bg-position-center {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-white {

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
     <title>Скупка алкоголя</title>
 </head>
 
 <body class="bg-white pos-rel">
-    <header class="header bg-white w-100 pos-fix top-0 right-0">
+    <header class="header bg-white w-100 pos-fix top-0 right-0 z-index-10">
         <div class="container d-flex align-items-center justify-content-between" role="grid">
             <a class="header_logo" href="/">Alcostock</a>
             <nav class="header_contacts d-flex align-items-center">
@@ -40,14 +40,16 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container" role="grid">
-                <h1 class="hero_title">
-                    Хотите продать алкоголь?
-                </h1>
-                <p class="hero_description">
-                    Мы осуществляем скупку как очень редких и дорогих так и общедоступных алкогольных напитков.
-                </p>
+        <section class="hero d-flex align-items-center bg-position-center pos-rel before-abs-bg">
+            <div class="container pos-rel z-index-1" role="grid">
+                <div class="container-half" role="grid">
+                    <h1 class="hero_title">
+                        Хотите продать алкоголь?
+                    </h1>
+                    <p class="hero_description">
+                        Мы осуществляем скупку как очень редких и дорогих так и общедоступных алкогольных напитков.
+                    </p>
+                </div>
                 <!-- <div class="hero_contacts">
                     <h2>Связаться с нами:</h2>
                     <ul>
@@ -116,7 +118,7 @@
             about
         </section> -->
     </main>
-    <footer class="footer bg-white-darker w-100 pos-abs fs-16 bottom-0 right-0">
+    <footer class="footer bg-white-darker w-100 pos-abs bottom-0 right-0">
         <div class="container" role="grid">
             <h3 class="fw-500 fs-18">Контакты</h3>
             <ul class="d-inline-block">

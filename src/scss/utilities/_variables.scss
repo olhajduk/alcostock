@@ -10,12 +10,13 @@ $ff-default: 'Montserrat', sans-serif;
 $ff-logo: 'Lobster', cursive;
 
 // colors
+$color-white: #fff;
 $color-primary:  #200f10;
 $color-secondary: #4f3a2d;
 $color-hover-link: #b27f3f;
 $color-footer: #3b424a;
-$color-body-bg: #fff;
+$color-body-bg: $color-white;
 $color-footer-bg: #eeedee;
 
 // transition
-$tr-default: .15s ease-out;
+$tr-default: .10s ease-out;

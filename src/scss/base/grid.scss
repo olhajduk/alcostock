@@ -26,6 +26,14 @@
     }
 }
 
+.container-half {
+    width: 100%;
+
+    @include media-breakpoint-up($bp-md) {
+        width: 50%;
+    }
+}
+
 .d-flex {
     display: flex;
 }
