@@ -8,6 +8,7 @@
 @import './utilities/functions';
 
 @import './base/grid';
+@import './base/position';
 @import './base/typography';
 
 @import './components/buttons';
@@ -27,13 +28,18 @@
 body {
   font-family: $ff-default;
   font-size: 14px;
-  line-height: 1;
-  color: $default;
+  line-height: 1.2;
+  color: $color-primary;
 }
 
 a {
   text-decoration: none;
-  color: $default;
+  color: $color-primary;
+  transition: $tr-default;
+
+  &:hover {
+    color: $color-hover-link;
+  }
 }
 
 ul {
@@ -41,9 +47,23 @@ ul {
 }
 
 main {
-  padding-top: 46px;
+  padding: 58px 0 202px;
+  min-height: 100vh;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+
+  path {
+      fill: currentColor;
+  }
 }
 
 .bg-white {
-  background: $white;
+  background: $color-body-bg;
+}
+
+.bg-white-darker {
+  background: $color-footer-bg;
 }

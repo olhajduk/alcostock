@@ -1,9 +1,6 @@
 .header {
     padding: 10px 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    border-bottom: 3px solid $default-red;
+    border-bottom: 2px solid $color-secondary;
 
     &_logo {
         font-size: 30px;
@@ -13,24 +10,11 @@
 
     &_link {
         margin-left: 15px;
-        color: transparent;
         line-height: 0;
         font-size: 0;
-        transition: $tr-default;
 
         svg {
-            height: 100%;
             width: 18px;
-
-            path {
-                fill: $default;
-                opacity: 0.9;
-            }
-        }
-
-        &:hover svg path {
-            fill: $arsenic;
-            opacity: 1;
         }
     }
 }
