@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
+    "@splidejs/splide": "^2.4.14",
     "normalize.css": "^8.0.1"
   }
 }
