@@ -14,11 +14,20 @@
     }
 
     &_link {
-        color: $color-footer;
-
         svg {
             width: 16px;
             margin-right: 10px;
         }
+    }
+
+    &_alarm {
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    &_link,
+    &_alarm {
+        color: $color-footer;
     }
 }
