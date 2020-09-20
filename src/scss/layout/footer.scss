@@ -20,14 +20,14 @@
         }
     }
 
-    &_alarm {
+    &_warning {
         font-weight: 300;
         font-size: 12px;
         margin-top: 20px;
     }
 
     &_link,
-    &_alarm {
+    &_warning {
         color: $color-footer;
     }
 }
