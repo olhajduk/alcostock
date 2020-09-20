@@ -5,8 +5,8 @@
     color: $color-white;
 
     &::before {
-        background: #6f7b7f;
-        opacity: 0.5;
+        background: $color-hero-bg;
+        opacity: 0.65;
     }
 
     &_title {

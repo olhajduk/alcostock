@@ -7,9 +7,11 @@
     <link rel="shortcut icon" href="./assets/favicon.ico">
     <title>Скупка алкоголя в России и странах СНГ</title>
 
-    <meta name="description" content="Скупка коллекционного алкоголя во всех регионах России, Беларуси, Казахстане и других странах СНГ. Связаться: +375(33)333-33-33, telegram @vadimsommelier">
+    <meta name="description"
+        content="Скупка коллекционного алкоголя во всех регионах России, Беларуси, Казахстане и других странах СНГ. Связаться: +375(33)333-33-33, telegram @vadimsommelier">
 
-    <meta name="Keywords" content="скупка спиртного, скупка алкоголя, скупка алкоголя в москве, скупка элитного алкоголя, продать алкоголь, продать алкоголь в москве, алкоголь в петербурге продают, где продать алкоголь, продать крепкий алкоголь, продать элитный алкоголь, продать элитный алкоголь  в москве, выкуп алкоголя, коллекционный алкоголь, продать коллекционный алкоголь, продать алкоголь коллекционерам, продать спиртные напитки">
+    <meta name="Keywords"
+        content="скупка спиртного, скупка алкоголя, скупка алкоголя в москве, скупка элитного алкоголя, продать алкоголь, продать алкоголь в москве, алкоголь в петербурге продают, где продать алкоголь, продать крепкий алкоголь, продать элитный алкоголь, продать элитный алкоголь  в москве, выкуп алкоголя, коллекционный алкоголь, продать коллекционный алкоголь, продать алкоголь коллекционерам, продать спиртные напитки">
 
     <meta property="og:title" content="Скупка коллекционного алкоголя">
     <meta property="og:type" content="website">
@@ -20,13 +22,16 @@
     <meta property="og:url" content="https://olhajduk.github.io/alcostock/dist/index.html">
     <!-- TODO change og:site_name -->
     <meta property="og:site_name" content="alcostock.test">
-    <meta property="og:description" content="Скупка коллекционного алкоголя во всех регионах России, Беларуси, Казахстане и других странах СНГ. Связаться: +375(33)333-33-33, telegram @vadimsommelier">
+    <meta property="og:description"
+        content="Скупка коллекционного алкоголя во всех регионах России, Беларуси, Казахстане и других странах СНГ. Связаться: +375(33)333-33-33, telegram @vadimsommelier">
     <meta property="og:locale" content="rus_RU" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body class="bg-white pos-rel">
     <header class="header bg-white w-100 pos-fix top-0 right-0 z-index-10">
-        <div class="container d-flex align-items-center justify-content-between" role="grid">
+        <div class="container d-flex align-items-center justify-content-between">
             <a class="header_logo" href="/">Alcostock</a>
             <nav class="header_contacts d-flex align-items-center">
                 <a class="header_link d-flex align-items-center" title="@vadimsommelier"
@@ -56,9 +61,10 @@
         </div>
     </header>
     <main>
-        <section class="hero d-flex align-items-center bg-position-center pos-rel before-abs-bg" style="background-image:url(./assets/image/bg-hero.jpg)">
-            <div class="container pos-rel z-index-1" role="grid">
-                <div class="container-half" role="grid">
+        <section class="hero d-flex align-items-center bg-position-center pos-rel before-abs-bg"
+            style="background-image:url(./assets/image/bg-hero.jpg)">
+            <div class="container pos-rel z-index-1">
+                <div class="container-half">
                     <h1 class="hero_title">
                         Хотите продать алкоголь?
                     </h1>
@@ -69,18 +75,31 @@
             </div>
         </section>
         <section class="brands">
-            <div class="container" role="grid">
-                <h2 class="brands_title section_title">Brands</h2>
-                <p class="brands_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, eaque!</p>
-                <div id="splide" class="splide">
-                    <div class="splide__track">
-                      <ul class="splide__list">
-                        <li class="splide__slide">Slide 01</li>
-                        <li class="splide__slide">Slide 02</li>
-                        <li class="splide__slide">Slide 03</li>
-                      </ul>
+            <div class="container">
+                <h2 class="brands_title section_title ta-center fw-600">Напитки, которые нас интересуют</h2>
+                <p class="brands_description section_description ta-center">
+                    Нам интересны коллекционный или возрастной виски, редкие и малоизвестные марки рома, коньяк и
+                    арманьяк, коллекционное вино и шампанское
+                </p>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                      <div class="swiper-slide">Slide 10</div>
                     </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
                   </div>
+
+
             </div>
         </section>
         <!-- <section class="about">
@@ -88,7 +107,7 @@
         </section> -->
     </main>
     <footer class="footer bg-white-darker w-100 pos-abs bottom-0 right-0">
-        <div class="container" role="grid">
+        <div class="container">
             <h3 class="fw-500 fs-18">Контакты</h3>
             <ul class="d-inline-block">
                 <li>
@@ -123,8 +142,23 @@
                     </a>
                 </li>
             </ul>
+            <p class="footer_warning">
+                Мы не продаем спиртные напитки. <br>
+                Все приобретаемые бутылки используются
+                исключительно для пополнения частной коллекции. <br>
+                Чрезмерное употребление алкоголя вредит вашему здоровью!
+            </p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
 </body>
 
 </html>

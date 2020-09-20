@@ -34,6 +34,26 @@
     }
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-3 { 
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @include media-breakpoint-up($bp-md) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
 .d-flex {
     display: flex;
 }
