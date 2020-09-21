@@ -1,0 +1,25 @@
+.brands {
+    .swiper {
+        &-pagination {
+            position: relative;
+            bottom: auto;
+            left: auto;
+
+            &-bullet {
+                margin: 0 4px 10px;
+                background: $granular-limestone;
+                color: $color-secondary;
+        
+                &-active {
+                    background: $color-secondary;
+                    color: $color-white;
+                }
+        
+                &:hover:not(.swiper-pagination-bullet-active) {
+                    background: $color-white;
+                    border-color: $color-secondary;
+                }
+            }
+        }
+    }
+}     

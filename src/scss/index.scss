@@ -4,6 +4,7 @@
 
 
 @import '~normalize.css';
+@import './vendors/swiper';
 
 @import './utilities/variables';
 @import './utilities/mixins';
@@ -37,6 +38,8 @@ body {
 
 main {
   padding: 58px 0 201px;
+  padding: 58px 0 264px;
+  height: 100%;
   min-height: 100vh;
 }
 
@@ -82,8 +85,8 @@ svg {
 
   &_description {
     margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 29px;
+    font-size: 16px;
+    line-height: 25px;
     color: $color-desc;
 
     @include media-breakpoint-up($bp-md) {
