@@ -19,6 +19,8 @@
 }
 
 .ta-center {
-    text-align: center;
+    @include media-breakpoint-up($bp-md) {
+        text-align: center;
+    }
 }
 
