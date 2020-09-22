@@ -1,8 +1,6 @@
 import './scss/index.scss';
-
-
 document.addEventListener("DOMContentLoaded", function () {
-  console.log('Working!');
+
   let swiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-pagination',
@@ -13,4 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  console.log('Working!');
 });
