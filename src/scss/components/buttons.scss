@@ -5,7 +5,7 @@
     border-radius: 22px;
     transition: $tr-slow;
     border: 2px solid transparent;
-    font-weight: 500;
+    // font-weight: 500;
     outline: none;
 
     @include media-breakpoint-up($bp-md) {
