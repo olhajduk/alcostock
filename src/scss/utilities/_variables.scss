@@ -7,7 +7,8 @@ $bp-xl: 1400px;
 
 //font-family
 // $ff-default: 'Montserrat', sans-serif;
-$ff-default: 'Roboto', sans-serif;
+// $ff-default: 'Roboto', sans-serif;
+$ff-default: 'Raleway', sans-serif;
 $ff-logo: 'Lobster', cursive;
 
 // colors
@@ -21,7 +22,9 @@ $color-body-bg: $color-white;
 $color-hero-bg: #6f7b7f;
 $color-footer-bg: #eeedee;
 $granular-limestone: #e3e0db;
+$xanthous: #eeb22a;
 
 // transition
 $tr-default: .10s ease-out;
+$tr-medium: 0.15s ease-out;
 $tr-slow: .25s ease-out;
