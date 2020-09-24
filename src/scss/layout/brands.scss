@@ -50,18 +50,15 @@
     }
 
     &_slide {
+        padding: 12px 10px;
+        margin-top: 6px;
         flex-direction: column;
         border: 2px solid #e3e0db;
         border-radius: 20px;
-        padding: 12px 10px;
 
         @include media-breakpoint-up($bp-xs) {
             border: none;
             flex-direction: row;
-        }
-
-        @include media-breakpoint-up($bp-md) {
-            padding-top: 21px;
         }
     }
 
@@ -130,6 +127,10 @@
             width: 50%;
         }
 
+        @include media-breakpoint-up($bp-sm) {
+            padding-left: 30px;
+        }
+
         @include media-breakpoint-up($bp-md) {
             margin: initial;
         }
@@ -147,7 +148,7 @@
             max-width: 100%;
 
             @include media-breakpoint-up($bp-xs) {
-                height: 300px;
+                max-height: 300px;
             }
         }
 
