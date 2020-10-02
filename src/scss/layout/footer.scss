@@ -38,13 +38,13 @@
 
     li {
         &:not(:last-child) {
-            margin-bottom: 15px;
+            margin-bottom: 17px;
         }
     }
 
     &_link {
         svg {
-            width: 16px;
+            max-width: 19px;
             margin-right: 10px;
         }
     }

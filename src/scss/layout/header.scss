@@ -9,12 +9,12 @@
     }
 
     &_link {
-        margin-left: 15px;
+        margin-left: 18px;
         line-height: 0;
         font-size: 0;
 
         svg {
-            width: 18px;
+            max-width: 20px;
         }
     }
 }

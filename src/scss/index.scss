@@ -75,8 +75,9 @@ a {
 svg {
   height: 100%;
   width: 100%;
+  transition: $tr-medium;
 
-  path {
+  &:not(:hover) {
     fill: currentColor;
   }
 }
