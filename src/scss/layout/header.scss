@@ -1,6 +1,7 @@
 .header {
     padding: 10px 0;
     border-bottom: 2px solid $color-secondary;
+    z-index: 100;
 
     &_logo {
         font-size: 30px;

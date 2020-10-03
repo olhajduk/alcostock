@@ -2,14 +2,14 @@
     padding: 7px 15px 8px;
     font-size: 15px;
     text-transform: capitalize;   
-    border-radius: 22px;
+    border-radius: 50px;
     transition: $tr-slow;
     border: 2px solid transparent;
     // font-weight: 500;
     outline: none;
 
     @include media-breakpoint-up($bp-md) {
-        padding: 10px 25px 11px;
+        padding: 7px 20px 8px;
         font-size: 16px;
     }
 }

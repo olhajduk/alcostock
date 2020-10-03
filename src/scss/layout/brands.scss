@@ -1,9 +1,23 @@
 .brands {
     .swiper {
+        &-scroll {
+            @media (max-width: $bp-sm) {
+                overflow: auto;
+            }
+        }
+
         &-pagination {
             position: relative;
             bottom: auto;
             left: auto;
+
+            @media (max-width: $bp-sm) {
+                display: flex;
+
+                &:before {
+                    content: '';
+                }
+            }
 
             &-bullet {
                 position: relative;
@@ -11,6 +25,10 @@
                 border-color: $granular-limestone;
                 color: $color-secondary;
                 z-index: 1;
+
+                &:first-child {
+                    margin-left: 0;
+                }
 
                 &::after {
                     content: '';
@@ -45,37 +63,46 @@
                     border-color: $color-secondary;
                     cursor: default;
                 }
+
+                @media (max-width: $bp-sm) {
+                    display: block;
+                }
             }
         }
     }
 
     &_slide {
-        padding: 12px 10px;
+        // padding: 12px 10px;
         margin-top: 6px;
         flex-direction: column;
-        border: 2px solid #e3e0db;
-        border-radius: 20px;
+        // border: 2px solid #e3e0db;
+        // border-radius: 20px;
 
         @include media-breakpoint-up($bp-xs) {
-            border: none;
+            // border: none;
             flex-direction: row;
         }
     }
 
     &_items {
+        width: 100%;
         padding-bottom: 20px;
 
         @include media-breakpoint-up($bp-xs) {
             margin-top: 20px;
-            width: 50%;
+
             margin-right: 15px;
             margin-left: auto;
             text-align: end;
         }
 
         @include media-breakpoint-up($bp-sm) {
-            width: 40%;
             margin-right: 30px;
+            width: 50%;
+        }
+
+        @include media-breakpoint-up($bp-lg) {
+            width: 40%;
         }
 
         li {
@@ -120,14 +147,15 @@
     }
 
     &_contents {
-        width: 75%;
-        margin: auto;
+        justify-content: center;
 
         @include media-breakpoint-up($bp-xs) {
             width: 50%;
+            margin: auto;
         }
 
         @include media-breakpoint-up($bp-sm) {
+            justify-content: end;
             padding-left: 30px;
         }
 
@@ -144,10 +172,10 @@
         }
 
         img {
-
+            max-height: 180px;
             max-width: 100%;
 
-            @include media-breakpoint-up($bp-xs) {
+            @include media-breakpoint-up($bp-sm) {
                 max-height: 300px;
             }
         }

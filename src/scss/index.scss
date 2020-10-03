@@ -43,9 +43,14 @@ body {
 }
 
 main {
-  padding: 66px 0 383px;
+  padding-top: 66px;
+  padding-bottom: 437px;
   height: 100%;
   min-height: 100vh;
+
+  @include media-breakpoint-up($bp-xs) {
+    padding-bottom: 383px;
+  }
 }
 
 section {
@@ -98,7 +103,7 @@ svg {
     font-size: 16px;
     line-height: 25px;
     color: $color-desc;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 
     @include media-breakpoint-up($bp-md) {
       font-size: 19px;
