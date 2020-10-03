@@ -131,10 +131,10 @@
         }
 
         &:not(.brands_item-active) {
-            opacity: 0.5;
+            
 
-            &:hover {
-                opacity: 1;
+            &:not(:hover) {
+                color: rgba(39, 43, 48, 0.7);
             }
         }
 
