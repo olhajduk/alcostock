@@ -1,20 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-
-@import '~normalize.css';
+@import './vendors/normalize.css';
 @import './vendors/swiper';
 
 @import './utilities/variables';
 @import './utilities/mixins';
-@import './utilities/functions';
 
 @import './base/grid';
 @import './base/position';
-@import './base/typography';
 
 @import './components/buttons';
 
@@ -22,7 +13,6 @@
 @import './layout/hero';
 @import './layout/brands';
 @import './layout/value';
-@import './layout/about';
 @import './layout/footer';
 
 * {
@@ -38,7 +28,6 @@ html {
 body {
   font-family: $ff-default;
   font-size: 16px;
-  line-height: 1.5;
   color: $color-primary;
 }
 
@@ -124,4 +113,10 @@ svg {
 
 .bg-white-darker {
   background: $color-footer-bg;
+}
+
+.ta-center {
+  @include media-breakpoint-up($bp-md) {
+      text-align: center;
+  }
 }

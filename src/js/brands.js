@@ -39,5 +39,3 @@ class BrandsItems {
 document.addEventListener('DOMContentLoaded', () => {
     let brandsItems = new BrandsItems();
 })
-
-console.log('brandsItems Working!');
