@@ -69,17 +69,21 @@
                 }
             }
         }
+
+        &-lazy-preloader {
+
+            @include media-breakpoint-up($bp-sm) {
+                left: 20%;
+            }
+
+        }
     }
 
     &_slide {
-        // padding: 12px 10px;
-        margin-top: 6px;
+        margin-top: 15px;
         flex-direction: column;
-        // border: 2px solid #e3e0db;
-        // border-radius: 20px;
 
         @include media-breakpoint-up($bp-xs) {
-            // border: none;
             flex-direction: row;
         }
     }
@@ -131,7 +135,7 @@
         }
 
         &:not(.brands_item-active) {
-            
+
 
             &:not(:hover) {
                 color: rgba(39, 43, 48, 0.7);
@@ -162,22 +166,33 @@
         @include media-breakpoint-up($bp-md) {
             margin: initial;
         }
+
+        img {
+            opacity: 0;
+            transition: $tr-medium;
+
+            &.swiper-lazy-loaded {
+                opacity: 1;
+            }
+        }
     }
 
     &_content {
         display: none;
+        position: relative;
+        max-height: 180px;
+        height: 100%;
+        width: 100%;
 
-        li {
-            width: 100%;
+        @include media-breakpoint-up($bp-sm) {
+            max-height: 230px;
         }
 
         img {
-            max-height: 180px;
+            max-height: 100%;
             max-width: 100%;
 
-            @include media-breakpoint-up($bp-sm) {
-                max-height: 300px;
-            }
+
         }
 
         &-active {
