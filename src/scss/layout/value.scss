@@ -7,6 +7,18 @@
         }
     }
 
+    li {
+        padding: 15px 20px;
+
+        p {
+            padding-top: 10px;
+        }
+
+        @include media-breakpoint-up($bp-md) {
+            padding: 20px 25px;
+        }
+    }
+
     &_steps {
         list-style: none;
         counter-reset: my-awesome-counter;
@@ -23,17 +35,11 @@
 
     &_step {
         counter-increment: my-awesome-counter;
-
-        padding: 15px 20px;
         margin-bottom: 20px;
         border-radius: 5px;
         overflow: hidden;
         background: rgb(227, 224, 219);
         background: linear-gradient(133deg, rgba(227, 224, 219, 1) 0%, rgba(255, 255, 255, 0) 100%);
-
-        @include media-breakpoint-up($bp-md) {
-            padding: 20px 25px;
-        }
 
         &::before {
             content: counter(my-awesome-counter) ". ";
@@ -42,10 +48,6 @@
 
         h3 {
             display: inline-block;
-        }
-
-        p {
-            padding-top: 10px;
         }
     }
 }
