@@ -1,9 +1,10 @@
-@import './vendors/normalize.css';
+@import './vendors/normalize';
 @import './vendors/swiper';
 
 @import './utilities/variables';
 @import './utilities/mixins';
 
+@import './base/fonts';
 @import './base/grid';
 @import './base/position';
 
@@ -28,6 +29,7 @@ html {
 body {
   font-family: $ff-default;
   font-size: 16px;
+  text-rendering: optimizeLegibility;
   color: $color-primary;
 }
 
