@@ -53,6 +53,11 @@
         font-weight: 300;
         font-size: 12px;
         margin-top: 20px;
+
+        p:last-child {
+            text-transform: uppercase;
+            padding-top: 4px;
+        }
     }
 
     &_link,
