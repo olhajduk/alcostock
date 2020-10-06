@@ -1,6 +1,8 @@
 {
     "name": "Alcostock",
     "short_name": "Alcostock",
+    "description": "Скупка коллекционного алкоголя во всех регионах России, Беларуси, Казахстане и других странах СНГ.",
+    "start_url": "/",
     "icons": [
         {
             "src": "./android-chrome-192x192.png",
