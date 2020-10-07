@@ -48,6 +48,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.11.5"
+    "@babel/polyfill": "^7.11.5",
+    "lozad": "^1.16.0",
+    "swiper": "^6.3.2"
   }
 }
