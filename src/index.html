@@ -421,7 +421,7 @@
         </section>
     </main>
     <footer class="footer bg-white-darker w-100 pos-abs bottom-0 right-0">
-        <div class="container">
+        <div class="container d-flex justify-content-between flex-wrap">
             <div class="footer_contacts">
                 <h3 id="contacts"><span>Контакты</span></h3>
                 <ul class="d-inline-block">
@@ -510,18 +510,47 @@
                         </a>
                     </li>
                 </ul>
+
+                <div class="footer_warning">
+                    <p>
+                        Мы не производим продажу спиртных напитков.
+                    </p>
+                    <p>
+                        Вся продукция приобретается только для пополнения частной коллекции.
+                    </p>
+                    <p>
+                        Чрезмерное употребление алкоголя вредит вашему здоровью!
+                    </p>
+                </div>
             </div>
 
-            <div class="footer_warning">
-                <p>
-                    Мы не производим продажу спиртных напитков.
-                </p>
-                <p>
-                    Вся продукция приобретается только для пополнения частной коллекции.
-                </p>
-                <p>
-                    Чрезмерное употребление алкоголя вредит вашему здоровью!
-                </p>
+            <div class="footer_form">
+                <form class="form" action="./form.php" method="post">
+
+                    <div class="form_field d-flex fd-column">
+                        <label for="name">Ваше имя<sup>*</sup></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form_field d-flex fd-column">
+                        <label for="tel">Телефон<sup>*</sup></label>
+                        <input type="tel" id="tel" name="tel" required>
+                    </div>
+                    <div class="form_field d-flex fd-column">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form_field d-flex fd-column">
+                        <label for="feedback">Что вас интересует?</label>
+                        <textarea id="feedback" name="feedback"></textarea>
+                    </div>
+                    <div class="form_field d-flex fd-column">
+                        <input type="file" accept="image/jpeg,image/png">
+                        <sup>Максимальный размер файла фотографии до 5 мб, форматы - jpg и png.</sup>
+                    </div>
+                    <div class="form_field">
+                        <input type="submit" name="send" value="Отправить">
+                    </div>
+                </form>
             </div>
         </div>
     </footer>

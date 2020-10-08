@@ -65,6 +65,10 @@ module.exports = {
       {
         from: path.resolve(__dirname, 'src/site.webmanifest'),
         to: path.resolve(__dirname, 'dist/site.webmanifest')
+      },
+      {
+        from: path.resolve(__dirname, 'src/form.php'),
+        to: path.resolve(__dirname, 'dist/form.php')
       }
     ]),
     new MiniCssExtractPlugin({
