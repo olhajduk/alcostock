@@ -36,10 +36,16 @@
         }
     }
 
-    li {
+    li,
+    .form_field {
         &:not(:last-child) {
             margin-bottom: 17px;
         }
+    }
+
+    &_contacts {
+        width: 100%;
+        max-width: 40%;
     }
 
     &_link {
@@ -49,9 +55,13 @@
         }
     }
 
-    &_warning {
+    &_warning,
+    .form_info {
         font-weight: 300;
         font-size: 12px;
+    }
+
+    &_warning {
         margin-top: 20px;
 
         p:last-child {
@@ -61,7 +71,13 @@
     }
 
     &_link,
-    &_warning {
+    &_warning,
+    .form_info {
         color: $color-footer;
+    }
+
+    &_form {
+        width: 100%;
+        max-width: 60%;
     }
 }

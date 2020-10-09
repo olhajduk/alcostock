@@ -1,0 +1,55 @@
+.form {
+    margin-left: -15px;
+    margin-right: -15px;
+    justify-content: flex-end;
+
+    &_field {
+        width: 100%;
+        max-width: 50%;
+        padding: 0 15px;
+
+        input,
+        textarea {
+            background-color: $color-white;
+            border: 0;
+            outline: none;
+            display: block;
+            width: 100%;
+            color: #31373e;
+            border-radius: 6px;
+            padding: 20px;
+            height: 58px;
+            min-height: 58px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        label {
+            padding-bottom: 5px;
+            cursor: pointer;
+
+            sup {
+                padding-left: 1px;
+                color: #fc4710;
+            }
+        }
+    }
+
+
+    &_btn {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+        padding: 13px 20px;
+        border-color: rgba(59, 66, 74, 0.2);
+
+
+        &:hover {
+            border-color: #3b424a;
+            background-color: #3b424a;
+            color: $color-white;
+        }
+    }
+}

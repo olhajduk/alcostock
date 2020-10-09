@@ -1,4 +1,5 @@
 .button {
+    position: relative;
     padding: 7px 15px 8px;
     font-size: 15px;
     text-transform: capitalize;   
@@ -6,6 +7,33 @@
     transition: $tr-slow;
     border: 2px solid transparent;
     outline: none;
+    z-index: 1;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 22px;
+        opacity: 0;
+        transform: scale(.6);
+        transition: transform .7s cubic-bezier(.19, 1, .22, 1), opacity .15s cubic-bezier(.165, .84, .44, 1);
+        pointer-events: none;
+        will-change: opacity, transform;
+        z-index: -1;
+    }
+
+    &:hover:not(.swiper-pagination-bullet-active) {
+
+        &::after {
+            opacity: 1;
+            transform: scale(1);
+            transition: transform .9s cubic-bezier(.19, 1, .22, 1), opacity .6s cubic-bezier(.165, .84, .44, 1);
+        }
+    }
 
     @include media-breakpoint-up($bp-md) {
         padding: 7px 20px 8px;

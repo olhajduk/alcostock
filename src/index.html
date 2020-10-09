@@ -525,31 +525,35 @@
             </div>
 
             <div class="footer_form">
-                <form class="form" action="./form.php" method="post">
+                <form class="form d-flex flex-wrap" action="./form.php" method="post">
 
                     <div class="form_field d-flex fd-column">
                         <label for="name">Ваше имя<sup>*</sup></label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required title="Ваше имя*">
                     </div>
                     <div class="form_field d-flex fd-column">
                         <label for="tel">Телефон<sup>*</sup></label>
-                        <input type="tel" id="tel" name="tel" required>
+                        <input type="tel" id="tel" name="tel" required title="Телефон*">
                     </div>
                     <div class="form_field d-flex fd-column">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" title="Email">
                     </div>
                     <div class="form_field d-flex fd-column">
-                        <label for="feedback">Что вас интересует?</label>
-                        <textarea id="feedback" name="feedback"></textarea>
+                        <label for="feedback">Что вас интересует?<sup>*</sup></label>
+                        <textarea id="feedback" name="feedback" title="Что вас интересует?" required></textarea>
                     </div>
-                    <div class="form_field d-flex fd-column">
-                        <input type="file" accept="image/jpeg,image/png">
-                        <sup>Максимальный размер файла фотографии до 5 мб, форматы - jpg и png.</sup>
-                    </div>
-                    <div class="form_field">
-                        <input type="submit" name="send" value="Отправить">
-                    </div>
+
+                    <!-- <div class="form_field d-flex fd-column">
+                        <input type="file" accept="image/jpeg,image/png" multiple aria-label="file"
+                            title="Загрузите одну или несколько фотографий">
+                        <div class="form_info">
+                            <p>Вы можете загрузить до 5 фотографий.</p>
+                            <p>Максимальный размер файла до 5 мб, форматы - jpg и png.</p>
+                        </div>
+                    </div> -->
+
+                    <input class="form_btn button" type="submit" name="send" value="Отправить" aria-label="submit">
                 </form>
             </div>
         </div>
