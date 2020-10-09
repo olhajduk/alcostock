@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-            let arr = new Array('виски', 'коньяк', 'ром', 'арманьяк', 'вино', 'шампанское');
+            let arr = new Array('виски', 'ром', 'коньяк', 'арманьяк', 'вино', 'шампанское');
             return '<span class="' + className + ' button ">' + (arr[index]) + '</span>';
         },
     },

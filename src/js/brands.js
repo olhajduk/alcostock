@@ -1,7 +1,7 @@
 class BrandsItems {
     constructor() {
-        this.tabList = document.querySelectorAll('.brands_item');
-        this.contentList = document.querySelectorAll('.brands_content');
+        this.tabList = document.querySelectorAll('.brands_slide .brands_item');
+        this.contentList = document.querySelectorAll('.brands_slide .brands_content');
         let nav = document.querySelector('.brands_slide');
 
         nav.addEventListener('click', e => this.show(e));
