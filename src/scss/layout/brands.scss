@@ -4,17 +4,6 @@
             @media (max-width: $bp-sm) {
                 overflow: auto;
                 position: relative;
-
-                // &:before {
-                //     content: '';
-                //     position: absolute;
-                //     top: 0;
-                //     right: 0;
-                //     height: 100%;
-                //     width: 55px;
-                //     background: linear-gradient(90deg,  rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8) 110%);
-                //     z-index: 1;
-                // }
             }
         }
 
@@ -147,7 +136,7 @@
             transition: $tr-medium;
         }
 
-        &:not(.brands_item-active) {
+        &:not(.active) {
 
 
             &:not(:hover) {
@@ -155,7 +144,7 @@
             }
         }
 
-        &-active {
+        &.active {
             &::before {
                 opacity: 0.4;
                 height: 6px;
@@ -203,7 +192,7 @@
             }
         }
 
-        &-active {
+        &.active {
             display: block;
         }
     }

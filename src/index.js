@@ -1,11 +1,11 @@
 import './scss/index.scss';
+// import $ from "jquery";
+import lozad from './../node_modules/lozad/dist/lozad.min';
+import Swiper from './../node_modules/swiper/swiper-bundle.min';
 import './js/brands';
 
-import lozad from 'lozad';
 const observer = lozad();
 observer.observe();
-
-import Swiper from './../node_modules/swiper/swiper-bundle.min';
 
 const swiper = new Swiper('.swiper-container', {
     preloadImages: false,
@@ -22,6 +22,3 @@ const swiper = new Swiper('.swiper-container', {
         },
     },
 });
-
-
-
