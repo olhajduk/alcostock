@@ -1,4 +1,5 @@
 .hero {
+    margin-top: 0;
     padding: 80px 0;
     color: $color-white;
     background-position: top;
@@ -7,7 +8,12 @@
 
     &::before {
         background: $color-hero-bg;
-        opacity: 0.65;
+        opacity: 0.9;
+        
+
+        @include media-breakpoint-up($bp-md) {
+            opacity: 0.65;
+        }
     }
 
     &_title {

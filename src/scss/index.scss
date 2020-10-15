@@ -10,11 +10,11 @@
 
 @import './components/buttons';
 
-@import './layout/header';
-@import './layout/hero';
-@import './layout/brands';
-@import './layout/value';
-@import './layout/footer';
+@import './modules/header';
+@import './modules/hero';
+@import './modules/brands';
+@import './modules/value';
+@import './modules/footer';
 
 * {
   margin: 0;
@@ -46,7 +46,11 @@ main {
 }
 
 section {
-  padding: 40px 0;
+  margin: 40px 0;
+
+  @include media-breakpoint-up($bp-xs) {
+    margin: 60px 0;
+  }
 }
 
 h3 {
@@ -66,6 +70,16 @@ a {
   &:hover {
     color: $color-hover-link;
   }
+}
+
+p {
+  a {
+    color: $color-hover-link;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
 }
 
 svg {
@@ -95,7 +109,7 @@ svg {
     font-size: 16px;
     line-height: 25px;
     color: $color-desc;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
     @include media-breakpoint-up($bp-md) {
       font-size: 19px;
