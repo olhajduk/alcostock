@@ -131,3 +131,20 @@ svg {
       text-align: center;
   }
 }
+
+.github {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: $tr-medium;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  a {
+    line-height: 0;
+    font-size: 0;
+  }
+}
