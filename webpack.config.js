@@ -66,6 +66,11 @@ module.exports = {
         from: path.resolve(__dirname, 'src/site.webmanifest'),
         to: path.resolve(__dirname, 'dist/site.webmanifest')
       }
+      ,
+      {
+        from: path.resolve(__dirname, 'src/robots.txt'),
+        to: path.resolve(__dirname, 'dist/robots.txt')
+      }
     ]),
     new MiniCssExtractPlugin({
       filename: filename('css')
