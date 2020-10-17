@@ -1,4 +1,7 @@
-# Local development installation guide [alcostock](https://olhajduk.github.io/alcostock/dist/index.html) project
+# Local development installation guide alcostock project
+[dev](https://olhajduk.github.io/alcostock/dist/index.html)
+
+[prod](https://alcostock.club/)
 
 ```
 git@github.com:olhajduk/alcostock.git alcostock
