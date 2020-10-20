@@ -1,5 +1,5 @@
 # Local development installation guide alcostock project
-[dev](https://olhajduk.github.io/alcostock/dist/index.html)
+[dev](https://olhajduk.github.io/alcostock/)
 
 [prod](https://alcostock.club/)
 
