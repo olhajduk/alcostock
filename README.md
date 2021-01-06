@@ -15,9 +15,9 @@ npm i
 ## Compiling and bundling assets:
 To run the watch or build processes, issue this command from the root of this repository
 ```
-npm start
+npm run start
 ```
 or
 ```
-npm build
+npm run build
 ```
